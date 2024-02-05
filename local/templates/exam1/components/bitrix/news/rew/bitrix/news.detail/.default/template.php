@@ -45,7 +45,7 @@ Loc::loadMessages(__FILE__);
     <p><?= Loc::getMessage("DOCUMENTS") ?></p>
     <?foreach ($arResult["DISPLAY_PROPERTIES"]["DOCUMENTS"]["FILE_VALUE"] as $documents) { ?>
         <div class="exam-review-item-doc"><img class="rew-doc-ico" src="<?= SITE_TEMPLATE_PATH ?>/img/icons/pdf_ico_40.png"><a
-                href="<?=$documents["SRC"]?>"><?=$documents["ORIGINAL_NAME"]?></a>
+                    href="<?=$documents["SRC"]?>" target="_blank" download="<?=$documents["ORIGINAL_NAME"]?>"><?=$documents["ORIGINAL_NAME"]?></a>
     </div>
     <? } ?>
 </div>
