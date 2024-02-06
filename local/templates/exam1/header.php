@@ -44,8 +44,8 @@ Loc::loadMessages(__FILE__);
                 $startWork = 9;
                 $endWork = 18;
                 ?>
-                
-                <? if ($hours >= $startWork && $hours <= $endWork) { ?>
+
+                <? if ($hours >= $startWork && $hours < $endWork) { ?>
                     <a href="tel:84952128506" class="phone">8 (495) 212-85-06</a>
                 <? } else { ?>
                     <a href="mailto:store@store.ru" class="phone">store@store.ru</a>

@@ -4,21 +4,21 @@ $aMenuLinks = Array(
 		"Условия сотрудничества", 
 		"/partneram/", 
 		Array(), 
-		Array(), 
+		Array("MENU_TEXT"=>""), 
 		"" 
 	),
 	Array(
 		"Как стать партнером", 
 		"/partneram/kak-stat-partnerom.php", 
 		Array(), 
-		Array(), 
+		Array("MENU_TEXT"=>""), 
 		"" 
 	),
 	Array(
 		"Расписание мероприятий", 
 		"/partneram/raspisanie-meropriyatiy/", 
 		Array(), 
-		Array(), 
+		Array("MENU_TEXT"=>"это текст для пункта \"Расписание мероприятий\""), 
 		"" 
 	)
 );

@@ -12,7 +12,8 @@ $this->setFrameMode(true);
             $img = SITE_TEMPLATE_PATH . "/img/rew/no_photo_left_block.jpg";
 
             if (isset($arItem["PREVIEW_PICTURE"]["ID"])) {
-                $arImg = CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"]["ID"], ["width" => 39, "height" => 39], 1, true);
+//                $arImg = CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"]["ID"], ["width" => 39, "height" => 39], BX_RESIZE_IMAGE_PROPORTIONAL, true);
+                $arImg = CFile::ResizeImageGet($arItem["PREVIEW_PICTURE"]["ID"], ["width" => 68, "height" => 50], BX_RESIZE_IMAGE_PROPORTIONAL, true);
                 $img = $arImg['src'];
             }
             ?>

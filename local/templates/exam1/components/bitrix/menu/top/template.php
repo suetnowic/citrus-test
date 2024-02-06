@@ -22,13 +22,13 @@ foreach($arResult as $arItem):?>
 			<li><a class="<?if($arItem["PARAMS"]["COLOR"]):?><?=$arItem["PARAMS"]["COLOR"]?><?endif;?>" href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a>
 				<ul>
                     <? if(isset($arItem["PARAMS"]["MENU_TEXT"])) { ?>
-                    <div class="menu-text"><?=$arItem["PARAMS"]["MENU_TEXT"]?> "<?=$arItem["TEXT"]?>"</div>
+                    <div class="menu-text"><?=$arItem["PARAMS"]["MENU_TEXT"]?></div>
                     <? } ?>
 		<?else:?>
 			<li><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a>
 				<ul>
                     <? if(isset($arItem["PARAMS"]["MENU_TEXT"])) { ?>
-                        <div class="menu-text"><?=$arItem["PARAMS"]["MENU_TEXT"]?> "<?=$arItem["TEXT"]?>"</div>
+                        <div class="menu-text"><?=$arItem["PARAMS"]["MENU_TEXT"]?></div>
                    <? } ?>
 
 		<?endif?>
